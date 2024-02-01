@@ -2,15 +2,14 @@ package chapter58;
 
 import java.util.Scanner;
 
-public class problem112213 {
+public class problem112224 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int sum = 0;
-        while (n > 0) {
-            sum += n % 10;
-            n /= 10;
+        int product = 1;
+        for (int i = 1; i <= n; i++) {
+            product *= i;
         }
-        System.out.println(sum);
+        System.out.println(product);
     }
 }
